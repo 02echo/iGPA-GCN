@@ -148,8 +148,8 @@ if __name__ == "__main__":
     # parser.add_argument("--PD_fold_label", type=str, help="the file name of PD_fold_label npy file")
     parser.add_argument("--adjGP", default='adjGP.npy', type=str, help="the file name of piRNA-disease adjacent matrix npy file")
     parser.add_argument("--GP_ben_ind_label", default='GP_ben_ind_label.npy', type=str, help="the file name of piRNA-disease adjacent matrix npy file")
-    parser.add_argument("--Epoch", type=int, default=250, help="Epochs")
-    parser.add_argument("--lr", type=float, default=0.00000000000000001, help="Learning Rate")
+    parser.add_argument("--Epoch", type=int, default=1600, help="Epochs")
+    parser.add_argument("--lr", type=float, default=1e-5, help="Learning Rate")
     parser.add_argument("--weight_decay", type=float, default=1.0, help="weight decay factor")
 
     # parser.add_argument("--piRSim",default='../分析/acute/geneSim_acute.npy', type=str, help="the file name of piRNA Similarity npy file")  # dataset/geneSim.npy
@@ -157,8 +157,8 @@ if __name__ == "__main__":
     # # parser.add_argument("--PD_fold_label", type=str, help="the file name of PD_fold_label npy file")
     # parser.add_argument("--adjGP", default='../分析/acute/adjGP_acute.npy', type=str, help="the file name of piRNA-disease adjacent matrix npy file")
     # parser.add_argument("--GP_ben_ind_label", default='../分析/acute/GP_ben_ind_label_acute.npy', type=str, help="the file name of piRNA-disease adjacent matrix npy file")
-    # parser.add_argument("--Epoch", type=int, default=250, help="Epochs")
-    # parser.add_argument("--lr", type=float, default=0.00000000000000001, help="Learning Rate")
+    # parser.add_argument("--Epoch", type=int, default=1600, help="Epochs")
+    # parser.add_argument("--lr", type=float, default=1e-5, help="Learning Rate")
     # parser.add_argument("--weight_decay", type=float, default=1.0, help="weight decay factor")
 
     args = parser.parse_args()
